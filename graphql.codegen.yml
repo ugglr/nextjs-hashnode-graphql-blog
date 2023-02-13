@@ -1,0 +1,10 @@
+schema:
+  - "https://api.hashnode.com"
+documents:
+  - "./graphql/**/*.graphql"
+generates:
+  ./generated/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo

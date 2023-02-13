@@ -1,0 +1,16 @@
+query GetBlogPosts {
+  user(username: "ugglr") {
+    publication {
+      posts(page: 0) {
+        _id
+        cuid
+        title
+        brief
+        slug
+        coverImage
+        dateAdded
+        dateUpdated
+      }
+    }
+  }
+}

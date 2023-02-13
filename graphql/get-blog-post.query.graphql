@@ -1,0 +1,9 @@
+query GetBlogPost($slug: String!, $hostname: String!) {
+  post(slug: $slug, hostname: $hostname) {
+    title
+    coverImage
+    slug
+    contentMarkdown
+    dateAdded
+  }
+}
